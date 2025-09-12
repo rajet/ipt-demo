@@ -12,4 +12,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
+      - name: Setup node
+        uses: actions/setup-node@v5
+
+      - name: Install packages
+        run: npm i
+
+      - name: Build project
+        run: npm run build
+
+
 
